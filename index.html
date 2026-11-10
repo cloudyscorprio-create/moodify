@@ -13,7 +13,7 @@
 .btn{border:0;border-radius:14px;padding:12px 17px;font-weight:750;cursor:pointer;text-decoration:none;display:inline-flex;align-items:center;justify-content:center;gap:8px;font-size:13px}.primary{background:#26364d;color:white}.secondary{background:#ffffffc9;color:#314b68;border:1px solid #fff}.layout{display:grid;grid-template-columns:1.55fr .85fr;gap:18px;margin-top:20px}.panel{background:#ffffffd9;border:1px solid #fff;border-radius:23px;padding:20px;box-shadow:var(--shadow);min-width:0}.panel-head{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:15px}.panel h2{font-size:18px;margin:0;letter-spacing:-.4px}.count{font-size:11px;color:#6e8298;background:#eef6ff;padding:7px 10px;border-radius:20px;white-space:nowrap}
 .search{width:100%;border:1px solid #e3edf7;background:#f8fbff;border-radius:13px;padding:13px 14px;font:inherit;font-size:13px;outline:none;margin-bottom:12px}.search:focus{border-color:#8fcaff;box-shadow:0 0 0 3px #c8e5ff70}.filters{display:flex;gap:7px;flex-wrap:wrap;margin-bottom:13px}.chip{border:1px solid #e5edf6;background:white;color:#718096;padding:7px 11px;border-radius:30px;font-size:11px;font-weight:700;cursor:pointer}.chip.active{background:#d9edff;border-color:#c4e2ff;color:#315c83}
 .song-list{display:flex;flex-direction:column;gap:7px;max-height:600px;overflow:auto;padding-right:3px}.song{display:flex;align-items:center;gap:12px;padding:11px;border-radius:15px;background:#fff;border:1px solid #edf2f8;transition:.15s}.song:hover{transform:translateY(-1px);border-color:#c9e5ff}.num{width:29px;height:29px;flex:0 0 29px;border-radius:10px;background:#edf6ff;color:#6485a7;display:grid;place-items:center;font-size:11px;font-weight:800}.song-info{min-width:0;flex:1}.song-title{font-size:13px;font-weight:800;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.artist{font-size:11px;color:#8290a1;margin-top:4px}.play{border:0;background:#fce7f0;color:#a34f76;border-radius:11px;padding:9px 11px;font-weight:800;font-size:11px;cursor:pointer;white-space:nowrap}.play:hover{background:#f8d6e5}
-.now{background:linear-gradient(150deg,#e3f2ff,#fff0f6);border-radius:18px;padding:17px;margin-top:5px}.disc{height:135px;width:135px;border-radius:50%;margin:7px auto 16px;background:conic-gradient(from 20deg,#9ecfff,#f7c4d9,#a8d5ff,#f4c3d9,#9ecfff);display:grid;place-items:center;box-shadow:0 8px 22px #a8c8e566}.disc:after{content:"♫";height:45px;width:45px;border-radius:50%;background:#fff;display:grid;place-items:center;font-size:23px;color:#7da8d2}.now-label{text-align:center;font-size:10px;letter-spacing:1.6px;color:#8195aa;font-weight:800}.now-title{text-align:center;font-size:16px;font-weight:850;margin:7px 0 3px}.now-artist{text-align:center;font-size:12px;color:#7b8da0}.spotify{width:100%;margin-top:15px;background:#1db954;color:white}.note{font-size:11px;color:#7e8da0;line-height:1.55;margin:13px 2px 0}.empty{text-align:center;color:#8190a0;font-size:13px;padding:25px 8px}.footer{text-align:center;color:#91a0b0;font-size:11px;margin-top:22px}
+.now{background:linear-gradient(150deg,#e3f2ff,#fff0f6);border-radius:18px;padding:17px;margin-top:5px}.disc{height:105px;width:105px;border-radius:50%;margin:7px auto 16px;background:conic-gradient(from 20deg,#9ecfff,#f7c4d9,#a8d5ff,#f4c3d9,#9ecfff);display:grid;place-items:center;box-shadow:0 8px 22px #a8c8e566}.disc:after{content:"♫";height:45px;width:45px;border-radius:50%;background:#fff;display:grid;place-items:center;font-size:23px;color:#7da8d2}.now-label{text-align:center;font-size:10px;letter-spacing:1.6px;color:#8195aa;font-weight:800}.now-title{text-align:center;font-size:16px;font-weight:850;margin:7px 0 3px}.now-artist{text-align:center;font-size:12px;color:#7b8da0}.embed-wrap{margin-top:15px;min-width:0}.embed-wrap iframe{display:block;width:100%;height:152px;border:0;border-radius:12px;background:#fff}.spotify{width:100%;margin-top:10px;background:#1db954;color:white}.note{font-size:11px;color:#7e8da0;line-height:1.55;margin:13px 2px 0}.empty{text-align:center;color:#8190a0;font-size:13px;padding:25px 8px}.footer{text-align:center;color:#91a0b0;font-size:11px;margin-top:22px}
 @media(max-width:760px){.layout{grid-template-columns:1fr}.app{padding:17px 13px 35px}.hero{padding:23px 20px}.hero:after{right:5px;font-size:130px}.panel{padding:16px}.now{max-width:none}.song-list{max-height:520px}}
 </style>
 </head>
@@ -23,7 +23,7 @@
 <section class="hero">
 <div class="eyebrow">a little music corner</div>
 <h1>Find the song<br>that feels like you.</h1>
-<p>Kumpulan lagu pilihanmu, dalam satu tempat kecil yang nyaman. Cari lagu, pilih, lalu buka pemutar resminya di Spotify.</p>
+<p>Kumpulan lagu pilihanmu, dalam satu tempat kecil yang nyaman. Pilih lagu untuk memutarnya langsung di pemutar Spotify yang tertanam di Moodify.</p>
 <div class="hero-actions"><a class="btn primary" href="#library">♫ Explore playlist</a><button class="btn secondary" id="randomBtn">✦ Surprise me</button></div>
 </section>
 <div class="layout">
@@ -34,15 +34,18 @@
 <div class="song-list" id="songList"></div>
 </section>
 <aside class="panel">
-<div class="panel-head"><h2>Now playing</h2><span class="count">Spotify</span></div>
-<div class="now"><div class="disc"></div><div class="now-label">READY WHEN YOU ARE</div><div class="now-title" id="nowTitle">Pilih sebuah lagu</div><div class="now-artist" id="nowArtist">Moodify playlist</div><a class="btn spotify" id="spotifyBtn" href="https://open.spotify.com/" target="_blank" rel="noopener">Open Spotify ↗</a></div>
-<p class="note">Moodify memakai tautan pencarian resmi Spotify. Ketuk “Open in Spotify” pada lagu pilihan untuk menemukannya dan memutarnya di aplikasi atau situs Spotify. Pemutaran mengikuti akun dan ketentuan Spotify.</p>
+<div class="panel-head"><h2>Now playing</h2><span class="count">Spotify player</span></div>
+<div class="now"><div class="disc"></div><div class="now-label">PLAYING INSIDE MOODIFY</div><div class="now-title" id="nowTitle">Sampai Jadi Debu</div><div class="now-artist" id="nowArtist">Banda Neira</div>
+<div class="embed-wrap"><iframe id="spotifyEmbed" title="Spotify music player" src="https://open.spotify.com/embed/track/4B3DEANIvod8552CbwftCG?utm_source=generator" loading="lazy" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" allowfullscreen></iframe></div>
+<a class="btn spotify" id="spotifyBtn" href="https://open.spotify.com/track/4B3DEANIvod8552CbwftCG" target="_blank" rel="noopener">Open on Spotify ↗</a></div>
+<p class="note">Tes pertama: “Sampai Jadi Debu” dari Banda Neira. Pemutar resmi Spotify tampil langsung di halaman Moodify. Untuk lagu lain, kami akan menambahkan tautan/embed satu per satu. Ketersediaan pemutaran mengikuti akun dan ketentuan Spotify.</p>
 </aside>
 </div>
 <div class="footer">Made with ♡ in baby blue & soft pink · Moodify</div>
 </div>
 <script>
 const songs = [
+["Sampai Jadi Debu","Banda Neira","indonesia","4B3DEANIvod8552CbwftCG"],
 ["Treat You Better","Shawn Mendes","international"],
 ["Merry Christmas, Please Don't Call","Bleachers","international"],
 ["Layarkan Rayaku","Raavfy","indonesia"],
@@ -91,20 +94,35 @@ const songs = [
 ["Sampai Menutup Mata","Acha Septriasa","indonesia"]
 ];
 const list=document.getElementById('songList'), search=document.getElementById('search');
-let filter='all', current=null;
-function spotifyUrl(song){return 'https://open.spotify.com/search/'+encodeURIComponent(song[0]+' '+song[1]);}
-function selectSong(i){current=songs[i];document.getElementById('nowTitle').textContent=current[0];document.getElementById('nowArtist').textContent=current[1];const b=document.getElementById('spotifyBtn');b.href=spotifyUrl(current);b.textContent='Open in Spotify ↗';}
+let filter='all';
+function selectSong(song){
+ document.getElementById('nowTitle').textContent=song[0];
+ document.getElementById('nowArtist').textContent=song[1];
+ const b=document.getElementById('spotifyBtn');
+ if(song[3]){
+  document.getElementById('spotifyEmbed').src='https://open.spotify.com/embed/track/'+song[3]+'?utm_source=generator';
+  b.href='https://open.spotify.com/track/'+song[3];
+  b.textContent='Open on Spotify ↗';
+ }else{
+  b.href='https://open.spotify.com/search/'+encodeURIComponent(song[0]+' '+song[1]);
+  b.textContent='Find this song on Spotify ↗';
+  document.getElementById('spotifyEmbed').src='https://open.spotify.com/embed/track/4B3DEANIvod8552CbwftCG?utm_source=generator';
+  document.getElementById('nowTitle').textContent=song[0]+' · link needed';
+  document.getElementById('nowArtist').textContent=song[1]+' — pemutar lagu ini belum ditautkan';
+ }
+ document.querySelector('.now').scrollIntoView({behavior:'smooth',block:'nearest'});
+}
 function render(){
  const q=search.value.trim().toLowerCase();
  const matches=songs.map((s,i)=>({s,i})).filter(({s})=>(filter==='all'||s[2]===filter)&&(!q||(s[0]+' '+s[1]).toLowerCase().includes(q)));
  document.getElementById('count').textContent=matches.length+' songs';
  list.innerHTML='';
  if(!matches.length){list.innerHTML='<div class="empty">Lagu tidak ditemukan. Coba kata kunci lain ♡</div>';return;}
- matches.forEach(({s,i},n)=>{const row=document.createElement('div');row.className='song';const num=document.createElement('div');num.className='num';num.textContent=String(n+1).padStart(2,'0');const info=document.createElement('div');info.className='song-info';const title=document.createElement('div');title.className='song-title';title.textContent=s[0];const artist=document.createElement('div');artist.className='artist';artist.textContent=s[1];info.append(title,artist);const btn=document.createElement('button');btn.className='play';btn.textContent='▶ Open';btn.addEventListener('click',()=>{selectSong(i);window.open(spotifyUrl(s),'_blank','noopener');});row.append(num,info,btn);list.append(row);});
+ matches.forEach(({s},n)=>{const row=document.createElement('div');row.className='song';const num=document.createElement('div');num.className='num';num.textContent=String(n+1).padStart(2,'0');const info=document.createElement('div');info.className='song-info';const title=document.createElement('div');title.className='song-title';title.textContent=s[0];const artist=document.createElement('div');artist.className='artist';artist.textContent=s[1];info.append(title,artist);const btn=document.createElement('button');btn.className='play';btn.textContent='▶ Play';btn.addEventListener('click',()=>selectSong(s));row.append(num,info,btn);list.append(row);});
 }
 search.addEventListener('input',render);
 document.querySelectorAll('.chip').forEach(b=>b.addEventListener('click',()=>{document.querySelectorAll('.chip').forEach(x=>x.classList.remove('active'));b.classList.add('active');filter=b.dataset.filter;render();}));
-document.getElementById('randomBtn').addEventListener('click',()=>{const i=Math.floor(Math.random()*songs.length);selectSong(i);window.open(spotifyUrl(songs[i]),'_blank','noopener');});
+document.getElementById('randomBtn').addEventListener('click',()=>{const i=Math.floor(Math.random()*songs.length);selectSong(songs[i]);});
 render();
 </script>
 </body>
